@@ -1,9 +1,20 @@
 {
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "verify": "npx hardhat verify",
+    "lint": "npx @biomejs/biome lint --write",
+    "format": "npx @biomejs/biome format --write",
+    "check": "npx @biomejs/biome check && npx hardhat check"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
     "@nomiclabs/hardhat-solhint": "^4.0.1",
     "hardhat": "^2.22.15",
     "prettier-plugin-solidity": "^1.4.1"
+  },
+  "volta": {
+    "node": "22.11.0"
   }
 }
